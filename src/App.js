@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Contactlayout from './layout/Contactlayout';
 import Contactinfo from './components/Contactinfo';
 import Contactform from './components/Contactform';
+import PageNotFound from './components/PageNotFound';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path="contactinfo" element={<Contactinfo />}></Route>
                     <Route path="contactform" element={<Contactform />}></Route>
                 </Route>
+                <Route path="*" element={<PageNotFound />}></Route>
             </Route>
         )
     );
